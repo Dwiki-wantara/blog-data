@@ -1,0 +1,191 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/addProject.css">
+    <link rel="stylesheet" href="assets/styles/nav.css">
+    <title>Add Project</title>
+</head>
+<body>
+    <nav>
+        <div class="navLeft">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" style="width: 40px;"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addProject.html">MyProject</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="navRight">
+            <ul>
+                <li> 
+                    <a href="contact.html" class="contacMe">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="formAddBlock" id="addBlog">
+
+        <div class="formContainerBlock">
+
+          <h3>Post Blog</h3>
+
+          <form action="" autocomplete="off" onsubmit="addBlog(event)">
+  
+            
+            <div class="formSubmitButton">
+              <label for="name">Project Name</label>
+              <input type="text" id="name" placeholder= "Project name"/>
+            </div>
+  
+            <div class="formDateSubmitButton">
+
+              <div class="formDate">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" />
+              </div>
+  
+              <div class="formDate">
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" />
+              </div>
+
+            </div>
+  
+            <div class="formSubmitButton">
+              <label for="description">Description</label>
+              <textarea name="description" id="description" placeholder="Description"></textarea>
+            </div>
+  
+            <h4 class="logoCheckbox">Technologies</h4>
+
+             <div class="checkboxes">
+
+              <div class="left">
+                <div class="checkbox_group">
+                  <input type="checkbox" name="nodejs" id="nodejs" value="Node Js"/>
+                  <label for="nodejs">Node Js</label>
+                </div>
+
+                <div class="checkbox_group">
+                  <input type="checkbox" name="reactjs" id="reactjs" value="React Js"/>
+                  <label for="reactjs">React Js</label>
+                </div>
+              </div>
+
+              <div class="right">
+                <div class="checkbox_group">
+                  <input type="checkbox" name="nextjs" id="nextjs" value="Next Js" />
+                  <label for="nextjs">Next Js</label>
+                </div>
+
+                <div class="checkbox_group">
+                  <input type="checkbox" name="typescript" id="typescript"  value="Typescript"/>
+                  <label for="typescript">Typescript</label>
+                </div>
+              </div>
+
+            </div>
+  
+    
+            <div class="formImage">
+  
+              <div class="upload">
+                <label for="upload" class="upload_btn">Select image</label>
+                <input type="file" id="upload" accept="image/*" style="display: none" onchange="preview(event.target.files[0])"/>
+              </div>
+  
+              <div class="preview">
+                <i class="photo_icon"></i>
+                <img style="display: none" class="img_preview" />
+              </div>
+
+            </div>
+  
+  
+            <div class="formSubmitButton">
+              <button type="submit" class="buttonSubmit">Submit</button>
+            </div>
+
+          </form>
+
+        </div>
+  
+        <div class="blog_container" id="blog-container"></div>
+        
+      </section>
+
+      <!-- <section class="headContent">
+
+        <h1>Add Project</h1>
+
+        <div class="formContent">
+
+          <form action="" >
+
+            <div class="projectName">
+              <label for="">Project Name</label>
+              <input type="text">
+            </div>
+
+            <div class="formDate">
+              <div class="startDate">
+                <label for="">Start Date</label>
+                <input type="date">
+              </div>
+
+              <div class="endDate">
+                <label for="endDate">end-date</label>
+                <input type="date">
+              </div>
+            </div>
+
+            <div class="description">
+              <label for="">Description</label>
+              <textarea name="" id="" cols="10" rows="5"></textarea>
+            </div>
+
+            <h3>Technologies</h3>
+
+            <div class="technologies">
+
+              <div class="checkbox_group">
+                <input type="checkbox">
+                <label for="">Node Js</label>
+              </div>
+
+            </div>
+            
+            <div class="formImage">
+              <div class="image">
+                <label for="">Select Image</label>
+                <input type="file">
+              </div>
+            </div>
+
+        
+
+          </form>
+
+        </div>
+          
+      </section> -->
+
+      
+
+
+
+
+
+
+
+
+
+  
+      <script src="assets/js/blog.js"></script>
+
+</body>
+</html>
